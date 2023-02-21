@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition-Card</title>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <div class="slider">
+            <p class="c font-family">RSUNIVERSE</p>
+        </div>
+        <div class="card">
+            <img src="images/sun.png" alt="" width="100%" height="140px">
+            <h3 class="name font-family">Vijay Kumar Sharma</h3>
+            <h4 class="font-family">Student</h4>
+            <div id="about-me"class="font-family">Hey I'm studeis in class 12 <sup>th</sup> and I'm also learning for Web-Designing &
+                Development.</div>
+            <button class="btn">Profile</button>
+        </div>
+        <div class="slider2">
+            <div class="profile-img"></div>
+        </div>
+    </div>
+    <style>
+        body {
+            background-image: linear-gradient(100deg, #0d1537 15%, rgb(197, 227, 232) 5%);
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .profile-img{
+            margin: auto;
+            border-radius: 100px;
+          background: url('images/i.jpg')center center;
+            border: 5px solid white;
+          background-size: cover;
+            min-width: 0px;
+            max-width: 90px;
+            height: 90px;
+        }
+        .c {
+            position: absolute;
+            bottom: 10px;
+            left: 18%;
+          text-align: center;
+            font-size: 20px;
+            color: blue;
+        }
+        h4{
+            color: red;
+        }
+        .name{
+            color: rgb(19, 146, 87);
+           font-size: 17px;
+        }
+
+        .font-family{
+            font-family: century;
+            font-weight: bold;
+        }
+        #about-me{
+            font-size: 14px;
+            color: blue;
+        }
+
+        .container {
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            margin: 100px auto;
+            min-width: 0;
+            max-width: 220px;
+            text-align: center;
+            box-shadow: 0px 0px 5px black;
+        }
+
+        .card {
+            min-width: 0%;
+            max-width: 220px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background: ghostwhite;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            width: 80px;
+            display: block;
+            margin: 8px auto;
+            padding: 5px 10px;
+            border-radius: 8px;
+            color: orangered;
+            font-weight: bold;
+            background-image: linear-gradient(cyan, white);
+        }
+
+        .slider {
+            position: absolute;
+            top: 0%;
+            height: 0%;
+            width: 100%;
+            background-image:  linear-gradient( #e86d48, #fff);
+            transition: all 2s;
+        }
+
+        .container:hover .slider {
+            height: 50%;
+            background-image:  linear-gradient(#e86d48, #fff);
+        }
+
+        .container:hover .slider2 {
+            height: 50%;
+            background-image: linear-gradient(to top ,#e86d48, #fff);
+        }
+
+        .slider2 {
+            position: absolute;
+            bottom: 0%;
+            height: 0%;
+            width: 100%;
+            background-image:  linear-gradient(to top ,#e86d48, #fff);
+            transition: all 2s;
+        }
+    </style>
+</body>
+
+</html>
