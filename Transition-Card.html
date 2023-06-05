@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Card</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="box">
+            <img src="images/student.PNG" alt="" />
+            <h3 style="text-align: center;">
+                Student
+            </h3>
+            <p>
+                As we know there is no age limit of learning, so any student can join the RSuniverse Computer Institute
+                to do the Computer courses that will help you to grow your career in IT sector
+            </p>
+        </div>
+
+        <div class="box">
+            <img src="images/professional.PNG" alt="" />
+            <h3 style="text-align: center;">
+                Professionals
+            </h3>
+            <p>
+                Every employee want's to increase there salary and want's higher designation, for that RSUniverse
+                Computer Institute provides Professional Courses
+            </p>
+        </div>
+        <div class="box">
+            <img src="images/housemaker.PNG" alt="" />
+            <h3 style="text-align: center;">
+                House-Maker
+            </h3>
+            <p>
+                House-Maker are multitasking who works in multiple fields and RSUniverse Computer Institute always
+                respects multitasking people who want to increase knowledge in IT Sector
+            </p>
+        </div>
+        <div class="box">
+            <img src="images/freelancer.PNG" alt="" />
+            <h3 style="text-align: center;">
+                Freelancer
+            </h3>
+            <p>
+                If any one wants to be self-employed this is possible with RSUniverse Computer Institute who provides
+                best courses for that persons that's make you Freelancer
+            </p>
+        </div>
+    </div>
+    <style>
+        body {
+            background: ghostwhite;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+        }
+
+        .row {
+            width: 100%;
+            margin: 100px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box {
+            width: 250px;
+            margin: 12px;
+            transition: 1s;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 4px 4px grey;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 4px 4px rgb(68, 196, 78);
+        }
+
+        .box img {
+            width: 230px;
+            height: 230px;
+        }
+
+        .box p {
+            text-align: justify;
+            margin-top: 8px;
+        }
+    </style>
+</body>
+
+</html>
